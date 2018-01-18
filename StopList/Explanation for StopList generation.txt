@@ -1,0 +1,21 @@
+To generate stop lists, we need to consider the combination of:
+1) term frequency of the term
+2) document frequency of the term
+
+A combination of higher term frequency along with a higher document frequency indicates
+the term to be a part of a stop list.
+
+In our case, we have a corpus of 1000 documents. Thereby, according to me,
+the stop list must contain the terms whose term frequency is greater than
+5000 and whose document frequency is greater than 675. Only if both these conditions
+satisfy, we consider the term to be a part of our stop list.
+
+If a term occurs in more than 67.5% of the documents, along with a high term frequency,
+then the term is considered to be a part of the stop list. Hence, for our corpus of 1000
+documents, I have considered the document frequency to be greater than 675.
+
+NOTE: PFA "StopList.txt" which shows all the terms considered to be a part of our stop list
+      for the given corpus. 
+
+
+
